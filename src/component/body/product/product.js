@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import ProductForDay from './productForDay';
+import ProductFree149 from './productFree149';
 
 function Product(props) {
     const { children, value, index, ...other } = props;
@@ -68,7 +69,7 @@ export default function BasicTabs() {
 
                 {/* หน้าร้านค้า แก้ไขที่ review.js */}
                 <Product value={value} index={1}>
-                <ProductForDay />
+                    <ProductFree149 />
                 </Product>
 
             </Box>
