@@ -4,7 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-
+import ProductForDay from './productForDay';
 
 
 function Product(props) {
@@ -50,11 +50,12 @@ export default function BasicTabs() {
     return (
         <div style={styles.container}>
             <Box sx={{ width: '100%', }}>
-                <Box sx={{ borderBottom: 1, borderColor: 'white' }}>
+                <Box sx={{ borderBottom: 1, borderColor: 'white', backgroundColor: 'white', width: '96%', margin: 'auto' }}>
                     <Tabs value={value} onChange={handleChange}
                         aria-label="basic tabs example"
-                        TabIndicatorProps={{ style: { background: '#fa5130' } }}
+                        TabIndicatorProps={{ style: { background: '#fa5130', height: 5 } }}
                         textColor="inherit"
+                        style={{ width: '96%', margin: 'auto' }}
                     >
                         <Tab label="สินค้าประจำวัน" style={{ fontSize: 14, fontWeight: 'bold', color: '#fa5130' }} {...allProps(0)} />
                         <Tab label="ส่งฟรีขั้นต่ำ 149.-" style={{ fontSize: 14, fontWeight: 'bold', color: '#fa5130' }}{...allProps(1)} />
@@ -62,7 +63,7 @@ export default function BasicTabs() {
                 </Box>
                 {/* หน้าร้านค้า แก้ไขที่ store.js */}
                 <Product value={value} index={0}>
-                    asd
+                    <ProductForDay />
                 </Product>
 
 
@@ -81,24 +82,14 @@ export default function BasicTabs() {
 const styles = {
 
     container: {
-        maxWidth: '63%',
+        maxWidth: '1250px',
         margin: 'auto',
-        backgroundColor: 'white',
-        paddingTop: 60,
+        backgroundColor: '#f5f5f5',
+        paddingTop: 20,
         minHeight: '100vh'
     },
 
-    boxCard: {
-        boxShadow: "0 0 3px 2px #eeeeee", /* the shadow */
-        width: '100%',
-        height: 100,
-        margin: 'auto',
-        backgroundColor: '#fbfbfb',
-        borderRadius: 15,
-        justifyContent: 'center',
-        display: 'flex',
-        alignItems: 'center',
-    },
+
     well: {
         width: '100%',
         height: 100,
