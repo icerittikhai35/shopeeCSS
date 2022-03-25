@@ -7,7 +7,7 @@ import SearchHeader from './searchHeader'
 const Header = () => {
     return (
         <div style={styles.container}>
-            <nav className="navbar fixed-top "  >
+            <nav >
                 <TopHeader />
                 <SearchHeader />
             </nav>

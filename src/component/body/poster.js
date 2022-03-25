@@ -22,22 +22,25 @@ const images = [
 ];
 
 
+
 function Poster() {
     return (
         <div style={styles.container}>
             <div style={styles.containerBox}>
 
                 <div style={{ display: 'flex' }}>
-                    <div style={{ width: 815, }}>
+                    <div style={{ width: '80%', }}>
                         <SimpleImageSlider
-                            width={810}
+                            width={710}
                             height={300}
                             images={images}
                             showBullets={true}
                             showNavs={false}
                             autoPlayDelay={5.0}
                             autoPlay={true}
-                            
+                           
+
+
                         />
                     </div>
                     <div style={{ marginLeft: 5, margin: 'auto' }}>
@@ -173,7 +176,7 @@ function Poster() {
 }
 const styles = {
     container: {
-        maxWidth: '1200px',
+        maxWidth: '1100px',
         backgroundColor: 'white',
         margin: 'auto',
         paddingTop: 150,
@@ -184,8 +187,8 @@ const styles = {
         maxWidth: '1200px',
         margin: 'auto',
     },
-    showBullets:{
-        color:'red'
+    showBullets: {
+        color: 'red'
     },
 }
 export default Poster;

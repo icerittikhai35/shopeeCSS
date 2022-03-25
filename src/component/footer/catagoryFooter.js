@@ -620,7 +620,7 @@ const styles = {
         minHeight: '540px'
     },
     containerBox: {
-        maxWidth: '1200px',
+        maxWidth: '1100px',
         margin: 'auto',
         paddingBottom: 80
     },
