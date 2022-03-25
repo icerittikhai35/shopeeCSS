@@ -82,7 +82,7 @@ export default function BasicTabs() {
 const styles = {
 
     container: {
-        maxWidth: '1150px',
+        maxWidth: '1250px',
         margin: 'auto',
         backgroundColor: '#f5f5f5',
         paddingTop: 20,

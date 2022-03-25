@@ -1,48 +1,139 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-import NextImg from '../../img/next.png'
+import Slider from "react-slick";
+
+
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "flex", background: "black", borderRadius: 50, }}
+            onClick={onClick}
+        />
+    );
+}
+
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "flex", background: "black", borderRadius: 50 }}
+            onClick={onClick}
+        />
+    );
+}
 
 function Catagory() {
+    var settings = {
+        dots: true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      initialSlide: 0,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+       
+
+
+
+    };
     return (
         <div style={styles.container}>
-            <Carousel
-                showStatus={false}
-                showIndicators={false}
-                showThumbs={false}
-                showArrows={true}
-                renderArrowNext={(clickHandler, hasPrev,) =>
-                    hasPrev && (
-                        <button onClick={clickHandler} style={{ borderRadius: 50, width: '60px', height: '60px' }}>
-                            <img
-                                style={{ height: "30px", width: "30px", }}
-                                src={NextImg} />
-                        </button>
-                    )
-                }
-                style={{ zIndex: '-1' }}
+            <div style={{ width: '98%', margin: 'auto', paddingTop: 20, }}>
+                <label style={{ fontSize: 18, fontWeight: 'normal', color: '#99938e' }}>หมวดหมู่</label>
+                <Slider {...settings}>
+                    <div style={{ margin: 'auto', display: 'flex', justifyContent: 'space-between' }}>
+                        <div style={{ width: '10%', backgroundColor: '#f5f5f5', margin: 'auto', display: 'flex', flexDirection: 'column', marginBottom: 0 }}>
+                            <div style={{ margin: 'auto' }}>
+                                <img src='https://cf.shopee.co.th/file/8016bce97bececb1cc323ddd28f5c6fd' alt="" width={70} style={{ borderRadius: 50 }} />
+                            </div>
+                            <div style={{ margin: 'auto' }}>
+                                <label style={{ fontSize: 14, fontWeight: 'normal', color: '#000000' }}>เสื้อผ้าแฟรชั่นผู้ชาย</label>
+                            </div>
+                        </div>
+                        <div style={{ width: '10%', backgroundColor: '#f5f5f5', margin: 'auto', display: 'flex', flexDirection: 'column' }}>
+                            <div style={{ margin: 'auto' }}>
+                                <img src='https://cf.shopee.co.th/file/8016bce97bececb1cc323ddd28f5c6fd' alt="" width={70} style={{ borderRadius: 50 }} />
+                            </div>
+                            <div style={{ margin: 'auto' }}>
+                                <label style={{ fontSize: 14, fontWeight: 'normal', color: '#000000' }}>เสื้อผ้าแฟรชั่นผู้ชาย</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>2</h3>
+                    </div>
+                    <div>
+                        <h3>2</h3>
+                    </div>
+                    <div>
+                        <h3>2</h3>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                    </div>
+                   
+                </Slider>
+            </div>
 
-            >
-                <div style={styles.container}>
-                    <img src="https://www.mountaingoatsoftware.com/uploads/blog/2016-09-06-what-is-a-product.png" />
-                </div>
-                <div style={styles.container}>
-                    <img src="https://www.mountaingoatsoftware.com/uploads/blog/2016-09-06-what-is-a-product.png" />
-                </div>
-                <div style={styles.container}>
-                    <img src="https://www.mountaingoatsoftware.com/uploads/blog/2016-09-06-what-is-a-product.png" />
-                </div>
-            </Carousel>
         </div>
     );
 }
 const styles = {
     container: {
-        maxWidth: '1100px',
+        maxWidth: '1200px',
         backgroundColor: 'white',
         margin: 'auto',
         marginTop: 20,
         boxShadow: '0px 0px 0px #000000',
-        minHeight: '540px',
+        minHeight: '300px',
 
     },
     containerBox: {

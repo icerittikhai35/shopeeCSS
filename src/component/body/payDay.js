@@ -51,7 +51,7 @@ function PayDay() {
 }
 const styles = {
     container: {
-        maxWidth: '1100px',
+        maxWidth: '1200px',
         backgroundColor: 'white',
         margin: 'auto',
         marginTop: 20,

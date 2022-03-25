@@ -30,7 +30,7 @@ function Poster() {
                 <div style={{ display: 'flex', }}>
                     <div style={{ width: '80%', }}>
                         <SimpleImageSlider
-                            width={745}
+                            width={795}
                             height={249}
                             images={images}
                             showBullets={true}
@@ -42,10 +42,10 @@ function Poster() {
                     </div>
                     <div style={{ marginLeft: 5, margin: 'auto' }}>
                         <div >
-                            <img src={PosterImg2} alt="" width={350} height={122} />
+                            <img src={PosterImg2} alt="" width={400} height={122} />
                         </div>
                         <div style={{  marginTop: 5 }}>
-                            <img src={PosterImg3} alt="" width={350} height={122} />
+                            <img src={PosterImg3} alt="" width={400} height={122} />
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@ function Poster() {
 }
 const styles = {
     container: {
-        maxWidth: '1100px',
+        maxWidth: '1200px',
         backgroundColor: 'white',
         margin: 'auto',
         paddingTop: 150,

@@ -49,7 +49,7 @@ function ProductForDay() {
 }
 const styles = {
     container: {
-        maxWidth: '1100px',
+        maxWidth: '1200px',
         backgroundColor: '#f5f5f5',
         margin: 'auto',
         paddingTop: 0,
