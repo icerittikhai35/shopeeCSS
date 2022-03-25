@@ -22,6 +22,7 @@ const styles = {
         backgroundColor: '#fa5130',
         position: 'fixed',
         height: 120,
+        zIndex: '+1' 
     },
 
 

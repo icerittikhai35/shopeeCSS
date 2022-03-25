@@ -54,7 +54,7 @@ const styles = {
         maxWidth: '1100px',
         backgroundColor: 'white',
         margin: 'auto',
-        marginTop: 50,
+        marginTop: 20,
         boxShadow: '0px 0px 0px #000000',
         height: '350px',
     },

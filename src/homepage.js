@@ -4,6 +4,7 @@ import Poster from './component/body/poster';
 import Product from './component/body/product/product'
 import Footer from './component/footer/fotter';
 import PayDay from './component/body/payDay';
+import Catagory from './component/body/category';
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
             <Header />
             <Poster />
             <PayDay />
+            <Catagory />
             <Product />
             <Footer />
 

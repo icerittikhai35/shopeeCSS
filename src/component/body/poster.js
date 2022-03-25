@@ -1,4 +1,3 @@
-import PosterImg1 from '../../img/poster1.jpg';
 import PosterImg2 from '../../img/poster2.png';
 import PosterImg3 from '../../img/poster3.png';
 import logistic from '../../img/logistics.png';
@@ -28,27 +27,25 @@ function Poster() {
         <div style={styles.container}>
             <div style={styles.containerBox}>
 
-                <div style={{ display: 'flex' }}>
+                <div style={{ display: 'flex', }}>
                     <div style={{ width: '80%', }}>
                         <SimpleImageSlider
-                            width={710}
-                            height={300}
+                            width={745}
+                            height={249}
                             images={images}
                             showBullets={true}
                             showNavs={false}
                             autoPlayDelay={5.0}
                             autoPlay={true}
-                           
-
 
                         />
                     </div>
                     <div style={{ marginLeft: 5, margin: 'auto' }}>
-                        <div style={{ height: '50%', }}>
-                            <img src={PosterImg2} alt="" width={380} />
+                        <div >
+                            <img src={PosterImg2} alt="" width={350} height={122} />
                         </div>
-                        <div style={{ height: '50%', marginTop: 10 }}>
-                            <img src={PosterImg3} alt="" width={380} />
+                        <div style={{  marginTop: 5 }}>
+                            <img src={PosterImg3} alt="" width={350} height={122} />
                         </div>
                     </div>
                 </div>
@@ -181,7 +178,7 @@ const styles = {
         margin: 'auto',
         paddingTop: 150,
         boxShadow: '0px 0px 0px #000000',
-        minHeight: '540px'
+        minHeight: '500px'
     },
     containerBox: {
         maxWidth: '1200px',

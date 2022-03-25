@@ -74,21 +74,8 @@ const styles = {
         paddingLeft: 10,
         border: 0
     },
-    textFirstHeader: {
-        color: 'white',
-        paddingLeft: 0,
-        paddingTop: 1,
-        fontSize: 12,
-        fontWeight: 'normal'
-    },
-    textHeader: {
-        color: 'white',
-        paddingLeft: 10,
-        paddingTop: 1,
-        fontSize: 12,
-        fontWeight: 'normal'
-
-    },
+   
+   
 }
 
 export default Header;
