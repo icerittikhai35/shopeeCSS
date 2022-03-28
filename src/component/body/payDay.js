@@ -76,7 +76,7 @@ const styles = {
     },
     textPrice: {
         fontSize: 16,
-        paddingTop: 15,
+        paddingTop: 5,
         color: '#000000',
         paddingBottom: 8,
         textAlign: 'center',

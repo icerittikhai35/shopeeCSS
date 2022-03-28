@@ -5,6 +5,8 @@ import Product from './component/body/product/product'
 import Footer from './component/footer/fotter';
 import PayDay from './component/body/payDay';
 import Catagory from './component/body/category';
+import CodeFree from './component/body/codeFree';
+import FlashSale from './component/body/flashSale';
 
 function Home() {
     return (
@@ -13,6 +15,8 @@ function Home() {
             <Poster />
             <PayDay />
             <Catagory />
+            <FlashSale />
+            <CodeFree />
             <Product />
             <Footer />
 
