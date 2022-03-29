@@ -7,6 +7,8 @@ import PayDay from './component/body/payDay';
 import Catagory from './component/body/category';
 import CodeFree from './component/body/codeFree';
 import FlashSale from './component/body/flashSale';
+import ShopeeMall from './component/body/shopeeMall/shopeeMall';
+import BestSeller from './component/body/bestSaller';
 
 function Home() {
     return (
@@ -17,6 +19,8 @@ function Home() {
             <Catagory />
             <FlashSale />
             <CodeFree />
+            <ShopeeMall />
+            <BestSeller />
             <Product />
             <Footer />
 

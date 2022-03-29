@@ -13,7 +13,7 @@ function FlashSale() {
                     </div>
                     <div style={{ fontSize: 16, fontWeight: 'bold', paddingTop: 5, color: 'white', backgroundColor: 'black', width: '80px', textAlign: 'center' }}>
                         <Countdown
-                            date={Date.now() + 100000}
+                            date={Date.now() + 1000000}
                             daysInHours={true}
                         />
                     </div>

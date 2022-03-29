@@ -49,11 +49,11 @@ export default function BasicTabs() {
 
     return (
         <div style={styles.container}>
-            <Box sx={{ width: '100%', }}>
+            <Box sx={{ width: '100%',  }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'white', backgroundColor: 'white', width: '96%', margin: 'auto' }}>
                     <Tabs value={value} onChange={handleChange}
                         aria-label="basic tabs example"
-                        TabIndicatorProps={{ style: { background: '#fa5130', height: 5 } }}
+                        TabIndicatorProps={{ style: { background: '#fa5130', height: 5,  } }}
                         textColor="inherit"
                         style={{ width: '96%', margin: 'auto' }}
                     >
@@ -85,32 +85,11 @@ const styles = {
         maxWidth: '1250px',
         margin: 'auto',
         backgroundColor: '#f5f5f5',
-        paddingTop: 20,
+        paddingTop: 25,
         minHeight: '100vh',
     },
 
 
-    well: {
-        width: '100%',
-        height: 100,
-        margin: 'auto',
-        borderRadius: 15,
-        justifyContent: 'center',
-        display: 'flex',
-        alignItems: 'center',
-    },
-
-    font: {
-        fontSize: 14,
-        fontWeight: 'bold'
-    },
-    fontDeteil: {
-        fontSize: 12,
-        fontWeight: 'normal'
-
-    },
-    ImgProduct: {
-        borderRadius: 200,
-    }
+  
 
 };
