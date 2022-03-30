@@ -13,10 +13,10 @@ import SimpleImageSlider from "react-simple-image-slider";
 
 
 const images = [
-    { url: 'https://scontent.fcnx1-1.fna.fbcdn.net/v/t39.30808-6/277243714_5508769262499656_3093963448598635088_n.png?_nc_cat=109&ccb=1-5&_nc_sid=e3f864&_nc_ohc=ulPCpNVbe5IAX9jNwFs&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT-uIzyPqZDN8Cgn5g6svGPK96mNdXPQM85-cis3ZOGf3Q&oe=62400929' },
-    { url: 'https://scontent.fcnx1-1.fna.fbcdn.net/v/t39.30808-6/276073520_5494778340565415_2944834672599574351_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=n-wRAJjRGigAX9e0Wmc&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT-7zBCH39kUQZcXk-hf7so1y2PYGeuS_f7v7S8on0T0Xg&oe=623F2DF6' },
-    { url: 'https://scontent.fcnx1-1.fna.fbcdn.net/v/t39.30808-6/272761962_5311044848938766_4376898788481068354_n.png?_nc_cat=105&ccb=1-5&_nc_sid=e3f864&_nc_ohc=4ZA8nIFIjnAAX8M50qe&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT9wPaJG_ZUx4T1mBGYvh2u1xdTA7sqeJj6V4UQv5OemGg&oe=623F90FF' },
-    { url: 'https://scontent.fcnx1-1.fna.fbcdn.net/v/t39.30808-6/273781507_5371699419539975_2900010883245235114_n.png?_nc_cat=111&ccb=1-5&_nc_sid=e3f864&_nc_ohc=ZvVGt725B1MAX91eQKW&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT941296RQFOYu1L2rnOWTwqs5_68AXArNDj3mqcqDx9Qw&oe=62408B82' },
+    { url: 'https://www.techhub.in.th/wp-content/uploads/2021/06/Shopee-pay-Slide-Banner-1920x754px.jpg' },
+    { url: 'https://cf.shopee.co.th/file/b1d32ced4c34b7d2b13ddd785773f61c' },
+    { url: 'https://cf.shopee.co.th/file/915ff301bf522e145d2fd7ae30489874' },
+    { url: 'https://www.techhub.in.th/wp-content/uploads/2020/11/3BB-PressPic-20Nov2020-Pic-2.jpg' },
 
 ];
 
@@ -173,7 +173,7 @@ function Poster() {
 }
 const styles = {
     container: {
-        maxWidth: '1200px',
+        maxWidth: '100%',
         backgroundColor: 'white',
         margin: 'auto',
         paddingTop: 150,
